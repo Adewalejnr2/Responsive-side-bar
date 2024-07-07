@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="flex justify-between p-8 bg-lime-700">
+      <h1 class="logo text-3xl font-bold">Lucozade</h1>
+
+      <div class="text-white text-3xl btn-con">
+        <button class="open-btn">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <button class="close-btn">
+          <i class="fa-solid fa-x"></i>
+        </button>
+      </div>
+    </nav>
+    <div
+      id="sideBar"
+      class="fixed top-20 w-full bg-white pace-content-center transition-all duration-1000 ease-in sideBarclose"
+    >
+      <ul class="text-center grid gap-12 pt-8 font-semibold">
+        <li>Home</li>
+        <li>About</li>
+        <li>Shop</li>
+        <li>Contact</li>
+        <li>FAQ</li>
+      </ul>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
